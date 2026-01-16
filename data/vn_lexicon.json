@@ -1,0 +1,767 @@
+{
+  "itching": [
+    "ngứa toàn thân",
+    "ngứa ngáy",
+    "ngứa da",
+    "ngứa"
+  ],
+  "skin_rash": [
+    "nổi mẩn đỏ",
+    "nổi mề đay",
+    "phát ban",
+    "nổi ban"
+  ],
+  "nodal_skin_eruptions": [
+    "hạch nổi dưới da",
+    "nổi hạch trên da",
+    "nổi cục dưới da",
+    "nổi hạch"
+  ],
+  "continuous_sneezing": [
+    "hắt hơi liên tục",
+    "hắt xì liên tục",
+    "hắt hơi nhiều"
+  ],
+  "shivering": [
+    "rùng mình",
+    "lạnh run",
+    "run rẩy"
+  ],
+  "chills": [
+    "sốt rét (ớn lạnh)",
+    "lạnh người",
+    "ớn lạnh"
+  ],
+  "joint_pain": [
+    "nhức nhức các khớp",
+    "đau nhức các khớp",
+    "đau đau các khớp",
+    "nhức khớp",
+    "đau khớp"
+  ],
+  "stomach_pain": [
+    "nhức vùng dạ dày",
+    "đau vùng dạ dày",
+    "nhức thượng vị",
+    "đau thượng vị",
+    "nhức bao tử",
+    "nhức dạ dày",
+    "đau bao tử",
+    "đau dạ dày"
+  ],
+  "acidity": [
+    "nóng rát dạ dày",
+    "trào ngược axit",
+    "tăng axit",
+    "ợ chua"
+  ],
+  "ulcers_on_tongue": [
+    "nhiệt miệng ở lưỡi",
+    "vết loét trên lưỡi",
+    "loét lưỡi"
+  ],
+  "muscle_wasting": [
+    "hao cơ",
+    "mất cơ",
+    "teo cơ"
+  ],
+  "vomiting": [
+    "buồn nôn và nôn",
+    "nôn nao và nôn",
+    "nôn nôn",
+    "nôn ói",
+    "nôn"
+  ],
+  "burning_micturition": [
+    "tiểu buốt",
+    "tiểu rát",
+    "đái buốt",
+    "đái rát"
+  ],
+  "spotting_urination": [
+    "nước tiểu lẫn máu",
+    "nước đái lẫn máu",
+    "tiểu có đốm máu",
+    "đái có đốm máu",
+    "tiểu ra máu",
+    "đái ra máu"
+  ],
+  "fatigue": [
+    "kiệt sức",
+    "mệt mỏi",
+    "uể oải",
+    "mệt"
+  ],
+  "weight_gain": [
+    "tăng cân nhanh",
+    "tăng cân",
+    "lên cân"
+  ],
+  "anxiety": [
+    "bồn chồn lo lắng",
+    "căng thẳng",
+    "lo âu"
+  ],
+  "cold_hands_and_feets": [
+    "lạnh tay lạnh chân",
+    "chân tay lạnh",
+    "tay chân lạnh"
+  ],
+  "mood_swings": [
+    "tâm trạng thất thường",
+    "thay đổi tâm trạng",
+    "dễ cáu gắt"
+  ],
+  "weight_loss": [
+    "giảm cân nhanh",
+    "giảm cân",
+    "sụt cân"
+  ],
+  "restlessness": [
+    "không yên",
+    "bồn chồn",
+    "khó chịu",
+    "bứt rứt"
+  ],
+  "lethargy": [
+    "thiếu năng lượng",
+    "uể oải",
+    "lờ đờ",
+    "lừ đừ"
+  ],
+  "patches_in_throat": [
+    "mảng trắng ở họng",
+    "mảng bám ở họng",
+    "đốm ở họng"
+  ],
+  "irregular_sugar_level": [
+    "đường huyết không ổn định",
+    "đường huyết thất thường",
+    "rối loạn đường huyết"
+  ],
+  "cough": [
+    "ho",
+    "ho có đàm",
+    "ho có đờm",
+    "ho khan"
+  ],
+  "high_fever": [
+    "nóng sốt trên 39",
+    "nóng sốt cao",
+    "nóng sốt 39",
+    "sốt trên 39",
+    "sốt cao",
+    "sốt 39"
+  ],
+  "sunken_eyes": [
+    "hốc mắt trũng",
+    "mắt hõm sâu",
+    "mắt trũng"
+  ],
+  "breathlessness": [
+    "thở hụt hơi",
+    "hụt hơi",
+    "khó thở",
+    "thở gấp"
+  ],
+  "sweating": [
+    "ra mồ hôi",
+    "vã mồ hôi",
+    "đổ mồ hôi"
+  ],
+  "dehydration": [
+    "thiếu nước",
+    "khô người",
+    "mất nước"
+  ],
+  "indigestion": [
+    "rối loạn tiêu hoá",
+    "đầy bụng khó tiêu",
+    "khó tiêu"
+  ],
+  "headache": [
+    "nhức đầu âm ỉ",
+    "đau đầu âm ỉ",
+    "nhức đầu",
+    "đau đầu"
+  ],
+  "yellowish_skin": [
+    "da ngả vàng",
+    "da vàng",
+    "vàng da"
+  ],
+  "dark_urine": [
+    "nước tiểu màu đậm",
+    "nước tiểu sẫm màu",
+    "nước đái màu đậm",
+    "nước đái sẫm màu",
+    "tiểu sẫm",
+    "đái sẫm"
+  ],
+  "nausea": [
+    "cảm giác buồn nôn",
+    "cảm giác nôn nao",
+    "buồn nôn",
+    "nôn nao"
+  ],
+  "loss_of_appetite": [
+    "mất cảm giác thèm ăn",
+    "ăn không ngon",
+    "mất thèm ăn",
+    "chán ăn"
+  ],
+  "pain_behind_the_eyes": [
+    "nhức nhức sau mắt",
+    "đau nhức sau mắt",
+    "đau đau sau mắt",
+    "nhức hốc mắt",
+    "nhức sau mắt",
+    "đau hốc mắt",
+    "đau sau mắt"
+  ],
+  "back_pain": [
+    "nhức cột sống",
+    "đau cột sống",
+    "nhức lưng",
+    "đau lưng"
+  ],
+  "constipation": [
+    "khó đi ngoài",
+    "khó đại tiện",
+    "khó đi cầu",
+    "táo bón"
+  ],
+  "abdominal_pain": [
+    "đau bụng",
+    "nhức quặn bụng",
+    "nhức vùng bụng",
+    "đau quặn bụng",
+    "đau vùng bụng",
+    "nhức bụng"
+  ],
+  "diarrhoea": [
+    "đi ngoài phân lỏng",
+    "đại tiện phân lỏng",
+    "đi cầu phân lỏng",
+    "tiêu chảy",
+    "ỉa chảy"
+  ],
+  "mild_fever": [
+    "sốt nhẹ",
+    "sốt lâm râm",
+    "hơi sốt",
+    "sốt"
+  ],
+  "yellow_urine": [
+    "nước tiểu vàng sẫm",
+    "nước đái vàng sẫm",
+    "nước tiểu vàng",
+    "nước đái vàng",
+    "tiểu vàng",
+    "đái vàng"
+  ],
+  "yellowing_of_eyes": [
+    "lòng trắng mắt vàng",
+    "mắt vàng",
+    "vàng mắt"
+  ],
+  "acute_liver_failure": [
+    "suy chức năng gan cấp",
+    "gan suy cấp",
+    "suy gan cấp"
+  ],
+  "fluid_overload": [
+    "phù do ứ dịch",
+    "thừa dịch",
+    "ứ dịch"
+  ],
+  "swelling_of_stomach": [
+    "bụng trướng",
+    "chướng bụng",
+    "bụng sưng"
+  ],
+  "swelled_lymph_nodes": [
+    "sưng hạch bạch huyết",
+    "hạch sưng",
+    "nổi hạch"
+  ],
+  "malaise": [
+    "khó chịu trong người",
+    "mệt mỏi toàn thân",
+    "uể oải"
+  ],
+  "blurred_and_distorted_vision": [
+    "thị lực mờ",
+    "nhìn méo",
+    "nhìn mờ",
+    "mờ mắt"
+  ],
+  "phlegm": [
+    "nhiều đàm",
+    "nhiều đờm",
+    "khạc đàm",
+    "khạc đờm"
+  ],
+  "throat_irritation": [
+    "kích ứng họng",
+    "ngứa họng",
+    "rát họng"
+  ],
+  "redness_of_eyes": [
+    "cương tụ kết mạc",
+    "mắt đỏ",
+    "đỏ mắt"
+  ],
+  "sinus_pressure": [
+    "áp lực vùng xoang",
+    "căng tức xoang",
+    "nhức xoang",
+    "đau xoang"
+  ],
+  "runny_nose": [
+    "chảy nước mũi",
+    "mũi chảy nước",
+    "chảy mũi",
+    "sổ mũi"
+  ],
+  "congestion": [
+    "nghẹt mũi",
+    "ngạt mũi",
+    "kẹt mũi",
+    "tắc mũi"
+  ],
+  "chest_pain": [
+    "nhức tức ngực",
+    "đau tức ngực",
+    "nhức ngực",
+    "tức ngực",
+    "đau ngực"
+  ],
+  "weakness_in_limbs": [
+    "yếu cơ tay chân",
+    "tay chân yếu",
+    "yếu tay chân"
+  ],
+  "fast_heart_rate": [
+    "đánh trống ngực nhanh",
+    "tim đập nhanh nhanh",
+    "đánh trống ngực",
+    "nhịp tim nhanh",
+    "tim đập nhanh"
+  ],
+  "pain_during_bowel_movements": [
+    "nhức khi đại tiện",
+    "nhức lúc đi ngoài",
+    "đau khi đi ngoài",
+    "đau khi đại tiện",
+    "đau lúc đi ngoài",
+    "đau lúc đại tiện",
+    "nhức khi đi cầu",
+    "đau khi đi cầu",
+    "đau lúc đi cầu"
+  ],
+  "pain_in_anal_region": [
+    "nhức vùng hậu môn",
+    "nhức rát hậu môn",
+    "đau vùng hậu môn",
+    "đau rát hậu môn",
+    "nhức hậu môn",
+    "đau hậu môn"
+  ],
+  "bloody_stool": [
+    "đi ngoài ra máu",
+    "đại tiện ra máu",
+    "đi cầu ra máu",
+    "phân lẫn máu",
+    "phân có máu"
+  ],
+  "irritation_in_anus": [
+    "kích ứng hậu môn",
+    "ngứa hậu môn",
+    "rát hậu môn"
+  ],
+  "neck_pain": [
+    "nhức vùng cổ",
+    "đau vùng cổ",
+    "nhức cổ",
+    "đau cổ"
+  ],
+  "dizziness": [
+    "choáng váng",
+    "chóng mặt",
+    "hoa mắt"
+  ],
+  "cramps": [
+    "chuột rút",
+    "co rút cơ",
+    "vọp bẻ"
+  ],
+  "bruising": [
+    "bầm tím",
+    "vết bầm",
+    "dễ bầm"
+  ],
+  "obesity": [
+    "thừa cân",
+    "béo phì"
+  ],
+  "swollen_legs": [
+    "chân sưng",
+    "sưng chân",
+    "phù chân"
+  ],
+  "swollen_blood_vessels": [
+    "giãn tĩnh mạch",
+    "tĩnh mạch sưng",
+    "mạch máu sưng"
+  ],
+  "puffy_face_and_eyes": [
+    "mặt và mắt sưng",
+    "phù quanh mắt",
+    "phù mặt"
+  ],
+  "enlarged_thyroid": [
+    "phì đại tuyến giáp",
+    "tuyến giáp to",
+    "bướu cổ"
+  ],
+  "brittle_nails": [
+    "móng tay giòn",
+    "móng dễ gãy",
+    "móng giòn"
+  ],
+  "swollen_extremeties": [
+    "phù tay chân",
+    "sưng các chi",
+    "sưng tứ chi"
+  ],
+  "excessive_hunger": [
+    "thèm ăn quá mức",
+    "đnôn liên tục",
+    "đói liên tục",
+    "đnôn nhiều",
+    "đói nhiều"
+  ],
+  "extra_marital_contacts": [
+    "tình dục không chung thủy",
+    "quan hệ ngoài hôn nhân",
+    "quan hệ ngoài luồng"
+  ],
+  "drying_and_tingling_lips": [
+    "môi khô ngứa râm ran",
+    "khô và tê môi",
+    "môi khô tê"
+  ],
+  "slurred_speech": [
+    "nnôn ngọng",
+    "nói ngọng",
+    "nnôn khó",
+    "nnôn lắp",
+    "nói khó",
+    "nói lắp"
+  ],
+  "knee_pain": [
+    "nhức khớp gối",
+    "nhức đầu gối",
+    "đau khớp gối",
+    "đau đầu gối",
+    "nhức gối",
+    "đau gối"
+  ],
+  "hip_joint_pain": [
+    "nhức khớp háng",
+    "nhức vùng háng",
+    "đau khớp háng",
+    "đau vùng háng"
+  ],
+  "muscle_weakness": [
+    "giảm sức cơ",
+    "cơ yếu",
+    "yếu cơ"
+  ],
+  "stiff_neck": [
+    "nhức cứng cổ",
+    "đau cứng cổ",
+    "cổ cứng",
+    "cứng cổ"
+  ],
+  "swelling_joints": [
+    "khớp sưng",
+    "sưng khớp",
+    "phù khớp"
+  ],
+  "movement_stiffness": [
+    "cứng khớp khi vận động",
+    "vận động bị cứng",
+    "khó cử động"
+  ],
+  "spinning_movements": [
+    "chóng mặt xoay vòng",
+    "cảm giác quay cuồng",
+    "quay cuồng",
+    "xoay vòng"
+  ],
+  "loss_of_balance": [
+    "mất thăng bằng",
+    "đi không vững",
+    "loạng choạng"
+  ],
+  "unsteadiness": [
+    "đứng không vững",
+    "không vững",
+    "chao đảo"
+  ],
+  "weakness_of_one_body_side": [
+    "yếu một bên cơ thể",
+    "liệt nửa người",
+    "yếu nửa người"
+  ],
+  "loss_of_smell": [
+    "không ngửi thấy mùi",
+    "giảm khứu giác",
+    "mất khứu giác"
+  ],
+  "bladder_discomfort": [
+    "căng tức bàng quang",
+    "khó chịu bàng quang",
+    "nhức tức bàng quang",
+    "đau tức bàng quang"
+  ],
+  "foul_smell_of_urine": [
+    "mùi khai nặng",
+    "nước tiểu hôi",
+    "nước đái hôi",
+    "tiểu mùi hôi",
+    "đái mùi hôi"
+  ],
+  "continuous_feel_of_urine": [
+    "cảm giác buồn tiểu liên tục",
+    "cảm giác buồn đái liên tục",
+    "buồn tiểu liên tục",
+    "buồn đái liên tục",
+    "mắc tiểu liên tục",
+    "mắc đái liên tục",
+    "tiểu không hết",
+    "đái không hết"
+  ],
+  "passage_of_gases": [
+    "trung tiện",
+    "đánh rắm",
+    "xì hơi"
+  ],
+  "internal_itching": [
+    "ngứa trong người",
+    "ngứa bên trong",
+    "ngứa nội tạng"
+  ],
+  "toxic_look_(typhos)": [
+    "mặt nhiễm độc (thương hàn)",
+    "vẻ mặt nhiễm độc",
+    "trông nhiễm độc"
+  ],
+  "depression": [
+    "buồn chán",
+    "chán nản",
+    "trầm cảm"
+  ],
+  "irritability": [
+    "kích thích",
+    "cáu gắt",
+    "dễ cáu"
+  ],
+  "muscle_pain": [
+    "nhức nhức cơ bắp",
+    "đau nhức cơ bắp",
+    "đau đau cơ bắp",
+    "nhức cơ",
+    "đau cơ"
+  ],
+  "altered_sensorium": [
+    "rối loạn ý thức",
+    "thay đổi ý thức",
+    "lơ mơ"
+  ],
+  "red_spots_over_body": [
+    "đốm đỏ khắp người",
+    "ban đỏ toàn thân",
+    "nốt đỏ toàn thân"
+  ],
+  "belly_pain": [
+    "nhức vùng bụng dưới",
+    "đau vùng bụng dưới",
+    "nhức bụng âm ỉ",
+    "đau bụng âm ỉ",
+    "nhức bụng",
+    "đau bụng"
+  ],
+  "abnormal_menstruation": [
+    "kinh nguyệt bất thường",
+    "rối loạn kinh nguyệt",
+    "rong kinh/ít kinh"
+  ],
+  "dischromic_patches": [
+    "mảng da loang màu",
+    "mảng da sẫm màu",
+    "đốm đổi màu da"
+  ],
+  "watering_from_eyes": [
+    "chảy nước mắt",
+    "mắt chảy nước",
+    "rụng nước mắt"
+  ],
+  "increased_appetite": [
+    "tăng cảm giác thèm ăn",
+    "tăng thèm ăn",
+    "ăn nhiều hơn",
+    "thèm ăn"
+  ],
+  "polyuria": [
+    "đi tiểu nhiều lần",
+    "đi đái nhiều lần",
+    "tiểu nhiều",
+    "đái nhiều",
+    "đa niệu"
+  ],
+  "family_history": [
+    "gia đình có người mắc",
+    "di truyền gia đình",
+    "tiền sử gia đình"
+  ],
+  "mucoid_sputum": [
+    "đàm nhầy trong",
+    "đờm nhầy trong",
+    "khạc đàm nhầy",
+    "khạc đờm nhầy",
+    "đàm nhầy",
+    "đờm nhầy"
+  ],
+  "rusty_sputum": [
+    "khạc đàm rỉ sắt",
+    "khạc đờm rỉ sắt",
+    "đàm màu rỉ sắt",
+    "đờm màu rỉ sắt",
+    "đàm nâu đỏ",
+    "đờm nâu đỏ"
+  ],
+  "lack_of_concentration": [
+    "khó tập trung",
+    "kém tập trung",
+    "mất tập trung"
+  ],
+  "visual_disturbances": [
+    "rối loạn thị giác",
+    "hoa mắt nhìn mờ",
+    "nhìn bất thường"
+  ],
+  "receiving_blood_transfusion": [
+    "tiền sử truyền máu",
+    "đã truyền máu",
+    "truyền máu"
+  ],
+  "receiving_unsterile_injections": [
+    "dùng kim tiêm không vô trùng",
+    "tiêm chích không sạch",
+    "tiêm không vô trùng"
+  ],
+  "coma": [
+    "mất ý thức",
+    "bất tỉnh",
+    "hôn mê"
+  ],
+  "stomach_bleeding": [
+    "nôn ra máu do dạ dày",
+    "xuất huyết dạ dày",
+    "chảy máu dạ dày"
+  ],
+  "distention_of_abdomen": [
+    "căng trướng bụng",
+    "chướng bụng",
+    "bụng căng"
+  ],
+  "history_of_alcohol_consumption": [
+    "tiền sử uống rượu",
+    "uống rượu nhiều",
+    "lạm dụng rượu"
+  ],
+  "fluid_overload.1": [
+    "phù do ứ dịch",
+    "thừa dịch",
+    "ứ dịch"
+  ],
+  "blood_in_sputum": [
+    "khạc ra máu",
+    "đàm có máu",
+    "đờm có máu",
+    "ho ra máu"
+  ],
+  "prominent_veins_on_calf": [
+    "tĩnh mạch nổi ở bắp chân",
+    "nổi gân xanh bắp chân",
+    "gân xanh nổi"
+  ],
+  "palpitations": [
+    "đánh trống ngực",
+    "tim đập nhanh",
+    "tim đập mạnh",
+    "hồi hộp"
+  ],
+  "painful_walking": [
+    "nhức khi đi bộ",
+    "đau khi đi bộ",
+    "đi lại nhức",
+    "đi bộ nhức",
+    "đi lại đau",
+    "đi bộ đau"
+  ],
+  "pus_filled_pimples": [
+    "mụn chứa mủ",
+    "mụn viêm mủ",
+    "mụn mủ"
+  ],
+  "blackheads": [
+    "mụn cám đen",
+    "mụn đầu đen"
+  ],
+  "scurring": [
+    "đóng vảy da",
+    "da có vảy",
+    "vảy da"
+  ],
+  "skin_peeling": [
+    "da bong tróc",
+    "bong da",
+    "tróc da"
+  ],
+  "silver_like_dusting": [
+    "phấn trắng trên da",
+    "vảy trắng như bạc",
+    "vảy bạc"
+  ],
+  "small_dents_in_nails": [
+    "lõm nhỏ trên móng",
+    "móng có rỗ nhỏ",
+    "móng rỗ"
+  ],
+  "inflammatory_nails": [
+    "móng đỏ nhức",
+    "móng đỏ đau",
+    "móng viêm",
+    "viêm móng"
+  ],
+  "blister": [
+    "bóng nước",
+    "phồng rộp",
+    "mụn nước"
+  ],
+  "red_sore_around_nose": [
+    "vết loét đỏ quanh mũi",
+    "nhức đỏ quanh mũi",
+    "đau đỏ quanh mũi",
+    "lở quanh mũi"
+  ],
+  "yellow_crust_ooze": [
+    "chảy dịch vàng đóng vảy",
+    "dịch vàng rỉ",
+    "vảy vàng"
+  ]
+}

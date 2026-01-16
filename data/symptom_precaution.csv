@@ -1,0 +1,42 @@
+Disease,Precaution_1,Precaution_2,Precaution_3,Precaution_4
+(vertigo) Paroymsal  Positional Vertigo,Nằm nghỉ,Tránh thay đổi tư thế đột ngột,Tránh cử động đầu đột ngột,Thư giãn
+AIDS,Tránh vết thương hở,Mang đồ bảo hộ nếu có thể,Đi khám bác sĩ,Tái khám theo hẹn
+Acne,Tắm 2 lần/ngày,Tránh thức ăn nhiều dầu mỡ và cay,Uống nhiều nước,Tránh dùng quá nhiều sản phẩm
+Alcoholic hepatitis,Ngừng uống rượu/bia,Đi khám bác sĩ,Dùng thuốc theo chỉ định,Tái khám theo hẹn
+Allergy,Thoa thuốc calamine,Che vùng bị ảnh hưởng bằng băng gạc,Chườm lạnh (chườm đá) để giảm ngứa,
+Arthritis,Tập thể dục,Chườm nóng và chườm lạnh luân phiên,Thử châm cứu,Xoa bóp
+Bronchial Asthma,"Mặc quần áo rộng, thoáng",Hít thở sâu,Tránh xa tác nhân gây bệnh,Nhờ trợ giúp/y tế
+Cervical spondylosis,Chườm nóng hoặc chườm lạnh,Tập thể dục,Dùng otc pain reliver,Đi khám bác sĩ
+Chicken pox,Dùng lá neem khi tắm,Ăn/dùng lá neem,Dùng vaccine,Tránh nơi đông người
+Chronic cholestasis,Tắm nước mát,Thuốc giảm ngứa,Đi khám bác sĩ,Ăn uống lành mạnh
+Common Cold,Uống các thức uống giàu vitamin C,Dùng vapour,Tránh đồ ăn lạnh,Kiểm soát cơn sốt (hạ sốt đúng cách)
+Dengue,Uống nước ép lá đu đủ,Tránh thức ăn nhiều dầu mỡ và cay,"Tránh muỗi đốt (ngủ màn, chống muỗi)","Uống đủ nước, tránh mất nước"
+Diabetes,Ăn uống cân bằng,Tập thể dục,Đi khám bác sĩ,Tái khám theo hẹn
+Dimorphic hemmorhoids(piles),Tránh thức ăn nhiều dầu mỡ và cay,Dùng chiết xuất cây phỉ (witch hazel),Tắm nước ấm với muối Epsom,Uống nước ép nha đam
+Drug Reaction,Tránh làm kích ứng thêm,Đến bệnh viện/cơ sở y tế gần nhất,Ngừng dùng thuốc nghi ngờ gây phản ứng,Tái khám theo hẹn
+Fungal infection,Tắm 2 lần/ngày,Dùng dung dịch sát khuẩn nhẹ (Dettol) hoặc lá neem trong nước tắm,Giữ vùng nhiễm khô ráo,Mặc quần áo sạch
+GERD,Tránh thức ăn nhiều dầu mỡ và cay,Không nằm ngay sau khi ăn,Duy trì cân nặng hợp lý,Tập thể dục
+Gastroenteritis,Ngừng ăn thức ăn đặc một thời gian,Thử uống nước từng ngụm nhỏ,Nghỉ ngơi,Ăn uống trở lại từ từ
+Heart attack,Gọi cấp cứu/xe cấp cứu,Nhai hoặc nuốt 1 viên aspirin (nếu không dị ứng và được phép),Giữ bình tĩnh,
+Hepatitis B,Đến bệnh viện/cơ sở y tế gần nhất,Tiêm vắc-xin,Ăn uống lành mạnh,Dùng thuốc theo chỉ định
+Hepatitis C,Đến bệnh viện/cơ sở y tế gần nhất,Tiêm vắc-xin,Ăn uống lành mạnh,Dùng thuốc theo chỉ định
+Hepatitis D,Đi khám bác sĩ,Dùng thuốc theo chỉ định,Ăn uống lành mạnh,Tái khám theo hẹn
+Hepatitis E,Ngừng uống rượu/bia,Nghỉ ngơi,Đi khám bác sĩ,Dùng thuốc theo chỉ định
+Hypertension,Thiền/thư giãn,Tắm nước muối,Giảm căng thẳng,Ngủ đủ giấc
+Hyperthyroidism,Ăn uống lành mạnh,Xoa bóp,Dùng tía tô đất (lemon balm),Dùng radioactive iodine treatment
+Hypoglycemia,Nằm nghiêng một bên,Kiểm tra mạch,Uống đồ uống có đường,Đi khám bác sĩ
+Hypothyroidism,Giảm căng thẳng,Tập thể dục,Ăn uống lành mạnh,Ngủ đủ giấc
+Impetigo,Ngâm vùng bị ảnh hưởng trong nước ấm,Dùng kháng sinh theo chỉ định,Làm mềm và gỡ mài bằng khăn ấm ướt,Đi khám bác sĩ
+Jaundice,Uống nhiều nước,Dùng cây kế sữa (milk thistle),Ăn trái cây và thực phẩm giàu chất xơ,Dùng thuốc theo chỉ định
+Malaria,Đến bệnh viện/cơ sở y tế gần nhất,Tránh thức ăn nhiều dầu mỡ,Hạn chế thịt cá/đồ mặn,"Tránh muỗi đốt (ngủ màn, chống muỗi)"
+Migraine,Thiền/thư giãn,Giảm căng thẳng,Đeo kính râm phân cực khi ra nắng,Đi khám bác sĩ
+Osteoarthristis,Dùng acetaminophen (paracetamol),Đến bệnh viện/cơ sở y tế gần nhất,Tái khám theo hẹn,Tắm nước muối
+Paralysis (brain hemorrhage),Xoa bóp,Ăn uống lành mạnh,Tập thể dục,Đi khám bác sĩ
+Peptic ulcer diseae,Tránh thức ăn nhiều dầu mỡ và cay,Ăn thực phẩm chứa lợi khuẩn,Ngừng uống sữa,Hạn chế uống rượu/bia
+Pneumonia,Đi khám bác sĩ,Dùng thuốc theo chỉ định,Nghỉ ngơi,Tái khám theo hẹn
+Psoriasis,Rửa tay bằng nước ấm và xà phòng,Cầm máu bằng cách ấn chặt,Đi khám bác sĩ,Tắm nước muối
+Tuberculosis,Che miệng khi ho/hắt hơi,Đi khám bác sĩ,Dùng thuốc theo chỉ định,Nghỉ ngơi
+Typhoid,Ăn các loại rau củ giàu năng lượng,Điều trị kháng sinh theo chỉ định,Đi khám bác sĩ,Dùng thuốc theo chỉ định
+Urinary tract infection,Uống nhiều nước,Tăng cường bổ sung vitamin C,Uống nước ép nam việt quất,Bổ sung men vi sinh (probiotic)
+Varicose veins,Nằm thẳng và nâng chân cao,Bôi thuốc mỡ,Đeo tất ép tĩnh mạch,Không đứng yên quá lâu
+hepatitis A,Đến bệnh viện/cơ sở y tế gần nhất,Rửa tay kỹ,Tránh thức ăn nhiều dầu mỡ và cay,Dùng thuốc theo chỉ định
