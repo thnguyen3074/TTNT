@@ -4,209 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Health Chatbot</title>
-  <style>
-    :root{
-      --bg1:#0ea5e9;
-      --bg2:#22c55e;
-      --card:#ffffff;
-      --text:#0f172a;
-      --muted:#64748b;
-      --line:#e2e8f0;
-      --user:#dcfce7;
-      --bot:#ffffff;
-      --error:#ffe4e6;
-      --shadow: 0 10px 30px rgba(2, 6, 23, .12);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background: radial-gradient(1200px 600px at 20% 0%, rgba(14,165,233,.25), transparent 55%),
-                  radial-gradient(1200px 600px at 80% 10%, rgba(34,197,94,.22), transparent 55%),
-                  #f1f5f9;
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
-    }
-    .shell{
-      width:min(920px, 100%);
-      height:min(86vh, 1000px);
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:18px;
-      box-shadow:var(--shadow);
-      display:flex;
-      flex-direction:column;
-      overflow:hidden;
-    }
-    .header{
-      padding:14px 16px;
-      display:flex;
-      align-items:center;
-      gap:12px;
-      border-bottom:1px solid var(--line);
-      background: linear-gradient(90deg, rgba(14,165,233,.10), rgba(34,197,94,.10));
-    }
-    .logo{
-      width:100px;height:38px;border-radius:12px;
-      background: linear-gradient(135deg, var(--bg1), var(--bg2));
-      display:flex;align-items:center;justify-content:center;
-      color:white;font-weight:800;
-      letter-spacing:.5px;
-      flex:0 0 auto;
-    }
-    .title{
-      display:flex;flex-direction:column;line-height:1.2
-    }
-    .title b{font-size:15px}
-    .title span{font-size:12px;color:var(--muted)}
-    .chat{
-      flex:1;
-      padding:16px;
-      overflow:auto;
-      background:
-        radial-gradient(900px 500px at 10% 30%, rgba(14,165,233,.08), transparent 60%),
-        radial-gradient(900px 500px at 90% 70%, rgba(34,197,94,.07), transparent 60%),
-        #f8fafc;
-    }
-
-    .row{display:flex; margin:10px 0}
-    .row.user{justify-content:flex-end}
-    .row.bot{justify-content:flex-start}
-
-    .bubble{
-      max-width:min(720px, 86%);
-      padding:10px 12px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background:var(--bot);
-      box-shadow: 0 4px 14px rgba(2,6,23,.06);
-      white-space:pre-line;
-    }
-    .bubble.user{
-      background:var(--user);
-      border-color: rgba(34,197,94,.25);
-    }
-    .bubble.error{
-      background:var(--error);
-      border-color: rgba(244,63,94,.25);
-    }
-
-    .result-card{
-      max-width:min(720px, 86%);
-      background:var(--bot);
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:12px 14px;
-      box-shadow: 0 4px 14px rgba(2,6,23,.06);
-    }
-    .result-top{
-      display:flex; align-items:flex-start; justify-content:space-between;
-      gap:10px;
-      margin-bottom:8px;
-    }
-    .badge{
-      font-size:16px;
-      padding:4px 10px;
-      font-weight: bold;
-      border-radius:999px;
-      border:1px solid rgba(14,165,233,.25);
-      background: rgba(14,165,233,.08);
-      color:#075985;
-      white-space:nowrap;
-      height:fit-content;
-    }
-    .section{
-      margin-top:10px;
-      padding-top:10px;
-      border-top:1px dashed rgba(148,163,184,.6);
-      font-size:14px;
-      color:var(--text);
-    }
-    .muted{color:var(--muted); font-size:13px}
-    ul{margin:6px 0 0 18px; padding:0}
-    li{margin:4px 0}
-
-    .footer{
-      border-top:1px solid var(--line);
-      padding:12px;
-      background:#ffffff;
-    }
-    form{display:flex; gap:10px; align-items:center}
-    .input{
-      flex:1;
-      padding:12px 14px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      outline:none;
-      font-size:15px;
-      background:#fff;
-    }
-    .input:focus{
-      border-color: rgba(14,165,233,.45);
-      box-shadow: 0 0 0 4px rgba(14,165,233,.12);
-    }
-    .btn{
-      padding:12px 16px;
-      border-radius:14px;
-      border:0;
-      cursor:pointer;
-      font-weight:700;
-      color:white;
-      background: linear-gradient(135deg, var(--bg1), var(--bg2));
-      box-shadow: 0 8px 18px rgba(14,165,233,.18);
-    }
-    .btn:disabled, .input:disabled{
-      opacity:.6;
-      cursor:not-allowed;
-    }
-    .alert{
-      margin:10px 16px 0;
-      padding:10px 12px;
-      border-radius:12px;
-      border:1px solid rgba(244,63,94,.25);
-      background: rgba(244,63,94,.08);
-      color:#9f1239;
-      font-size:14px;
-    }
-     .top3{
-    margin-top:8px;
-    padding:10px 12px;
-    border-radius:12px;
-    border:1px solid rgba(14,165,233,.18);
-    background: rgba(14,165,233,.04);
-    font-size:14px;
-  }
-  .top3-title{
-    font-size:13px;
-    color:var(--muted);
-    font-weight:700;
-    margin-bottom:6px;
-  }
-  .top3-row{
-    display:flex;
-    justify-content:space-between;
-    gap:12px;
-    padding:4px 0;
-    border-top:1px dashed rgba(148,163,184,.35);
-  }
-  .top3-row:first-of-type{ border-top:0; }
-  .top3-name{ font-weight:600; }
-  .top3-prob{ color:#075985; font-weight:700; white-space:nowrap; }
-  </style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
 <div class="shell">
   <div class="header">
-    <div class="logo">NHÓM 18</div>
-    <div class="title">
-      <b>Chatbot Tư Vấn Sức Khỏe</b>
-      <span>Nhập triệu chứng • Gợi ý bệnh (tham khảo)</span>
+    <div class="header-left">
+      <div class="logo">NHÓM 18</div>
+      <div class="title">
+        <b>Chatbot Tư Vấn Sức Khỏe</b>
+        <span>Nhập triệu chứng • Gợi ý bệnh (tham khảo)</span>
+      </div>
     </div>
+    <a class="btn btn-reset" href="/reset">Cuộc trò chuyện mới</a>
   </div>
 
   {% if error %}
@@ -216,21 +27,12 @@
   <div id="chat" class="chat">
     {% for msg in history %}
       {% if msg.sender == 'user' %}
-        <div class="row user">
-          <div class="bubble user">{{ msg.text }}</div>
-        </div>
-
+        <div class="row user"><div class="bubble user">{{ msg.text }}</div></div>
       {% elif msg.error %}
-        <div class="row bot">
-          <div class="bubble error">{{ msg.text }}</div>
-        </div>
-
+        <div class="row bot"><div class="bubble error">{{ msg.text }}</div></div>
       {% else %}
-        {# Bot có thể là tin nhắn text (greeting) hoặc card kết quả #}
         {% if msg.text %}
-          <div class="row bot">
-            <div class="bubble">{{ msg.text }}</div>
-          </div>
+          <div class="row bot"><div class="bubble">{{ msg.text }}</div></div>
         {% else %}
           <div class="row bot">
             <div class="result-card">
@@ -241,22 +43,21 @@
                 </div>
                 <div class="badge">{{ msg.disease }}</div>
               </div>
-              
-                {% if msg.top3 and msg.top3|length > 0 %}
-                <div class="top3">
-                    <div class="top3-title">Top 3 bệnh có khả năng cao (tham khảo)</div>
 
-                    {% for item in msg.top3 %}
-                    <div class="top3-row {% if loop.first %}is-best{% endif %}">
-                        <div class="top3-left">
+              {% if msg.top3 and msg.top3|length > 0 %}
+                <div class="top3">
+                  <div class="top3-title">Top 3 bệnh có khả năng cao (tham khảo)</div>
+                  {% for item in msg.top3 %}
+                    <div class="top3-row">
+                      <div class="top3-left">
                         <span class="top3-rank">{{ loop.index }}</span>
                         <span class="top3-name">{{ item.disease }}</span>
-                        </div>
-                        <div class="top3-prob">{{ (item.prob * 100) | round(2) }}%</div>
+                      </div>
+                      <div class="top3-prob">{{ (item.prob * 100) | round(2) }}%</div>
                     </div>
-                    {% endfor %}
+                  {% endfor %}
                 </div>
-                {% endif %}
+              {% endif %}
 
               <div class="section">
                 <div class="muted"><b>Mô tả</b></div>

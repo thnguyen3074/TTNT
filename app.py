@@ -3,7 +3,7 @@ import json
 import csv
 import re
 import numpy as np
-from flask import Flask, request, render_template, session
+from flask import Flask, request, render_template, session, redirect, url_for
 import joblib
 
 from nlp import extract_symptoms, load_vn_lexicon, load_symptom_list
@@ -115,7 +115,6 @@ def index():
         return render_template("index.html", error=warning, disable_form=True, history=[])
 
     if request.method == "GET":
-        # không reset khi refresh, chỉ set greeting nếu chưa có
         if "history" not in session or not session.get("history"):
             session["history"] = [
                 {
@@ -155,7 +154,7 @@ def index():
             "error": True
         })
         session["history"] = _trim_history(chat_history)
-        return render_template("index.html", history=session["history"])
+        return redirect(url_for("index"))
 
     # Vector đặc trưng
     features = [1 if s in recognized_symptoms else 0 for s in SYMPTOM_LIST]
@@ -207,8 +206,12 @@ def index():
     })
 
     session["history"] = _trim_history(chat_history)
-    return render_template("index.html", history=session["history"])
+    return redirect(url_for("index"))
 
+@app.route("/reset")
+def reset():
+    session.clear()
+    return redirect("/")
 
 if __name__ == "__main__":
     app.run(debug=True)
