@@ -1,7 +1,6 @@
 import os
 import json
 import csv
-import re
 import numpy as np
 from flask import Flask, request, render_template, session, redirect, url_for
 import joblib
@@ -19,13 +18,15 @@ SYMPTOM_LIST = []
 VN_LEXICON = load_vn_lexicon("data/vn_lexicon.json")
 
 DESC_MAP = {}
+COMMON_SYMPTOMS_MAP = {}
 PRECAUTION_MAP = {}
 DISEASE_MAP = {}
 
 # Load disease vi map
-if os.path.exists("data/disease_vi.json"):
+DISEASE_FILE = "data/disease_vi.json"
+if os.path.exists(DISEASE_FILE):
     try:
-        with open("data/disease_vi.json", "r", encoding="utf-8") as f:
+        with open(DISEASE_FILE, encoding="utf-8") as f:
             DISEASE_MAP = json.load(f)
     except Exception as e:
         print(f"Lỗi khi đọc file ánh xạ tên bệnh: {e}")
@@ -34,48 +35,38 @@ if os.path.exists("data/disease_vi.json"):
 DESC_FILE = "data/symptom_Description.csv"
 if os.path.exists(DESC_FILE):
     try:
-        with open(DESC_FILE, "r", encoding="utf-8") as f:
-            reader = csv.reader(f)
-            headers = next(reader, None)
-            disease_idx = desc_idx = None
-
-            if headers:
-                for i, h in enumerate(headers):
-                    h_low = str(h).strip().lower()
-                    if h_low in ("disease", "prognosis"):
-                        disease_idx = i
-                    if h_low in ("description", "symptom_description", "details"):
-                        desc_idx = i
-
-            if disease_idx is None:
-                disease_idx = 0
-            if desc_idx is None:
-                desc_idx = 1
-
+        with open(DESC_FILE, encoding="utf-8") as f:
+            reader = csv.DictReader(f)
             for row in reader:
-                if not row or len(row) <= desc_idx:
-                    continue
-                disease_name = str(row[disease_idx]).strip()
-                description = str(row[desc_idx]).strip()
-                if disease_name:
-                    DESC_MAP[disease_name] = description
+                DESC_MAP[row["disease"].strip()] = row["description"].strip()
     except Exception as e:
         print(f"Lỗi khi đọc file mô tả bệnh: {e}")
+
+# Load common symptoms
+COMMON_FILE = "data/common_symptoms.csv"
+if os.path.exists(COMMON_FILE):
+    try:
+        with open(COMMON_FILE, encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                symptoms = [s.strip() for s in row["common_symptoms"].split(",")]
+                COMMON_SYMPTOMS_MAP[row["disease"].strip()] = symptoms
+    except Exception as e:
+        print(f"Lỗi khi đọc file triệu chứng thường gặp: {e}")
 
 # Load precautions
 PRE_FILE = "data/symptom_precaution.csv"
 if os.path.exists(PRE_FILE):
     try:
-        with open(PRE_FILE, "r", encoding="utf-8") as f:
+        with open(PRE_FILE, encoding="utf-8") as f:
             reader = csv.reader(f)
-            _ = next(reader, None)
+            next(reader, None)
             for row in reader:
-                if not row or len(row) < 2:
+                if not row:
                     continue
-                disease_name = str(row[0]).strip()
-                precautions = [str(x).strip() for x in row[1:] if x and str(x).strip()]
-                if disease_name:
-                    PRECAUTION_MAP[disease_name] = precautions
+                PRECAUTION_MAP[row[0].strip()] = [
+                    x.strip() for x in row[1:] if x.strip()
+                ]
     except Exception as e:
         print(f"Lỗi khi đọc file biện pháp: {e}")
 
@@ -170,16 +161,9 @@ def index():
     predicted_disease = str(predicted_disease).strip()
     disease_vi = DISEASE_MAP.get(predicted_disease, predicted_disease)
 
-    # Mô tả + triệu chứng thường gặp
-    description_full = DESC_MAP.get(predicted_disease, "Chưa có thông tin mô tả cho bệnh này.")
-    common_symptoms = []
-    description = description_full
-    splitter = re.split(r"Triệu\s*chứng\s*thường\s*gặp\s*:\s*", description_full, maxsplit=1, flags=re.IGNORECASE)
-    if len(splitter) == 2:
-        description = splitter[0].strip() or description_full
-        common_part = splitter[1].strip()
-        common_symptoms = [s.strip() for s in common_part.split(",") if s.strip()]
-
+    
+    description = DESC_MAP.get(predicted_disease, "Chưa có mô tả cho bệnh này.")
+    common_symptoms = COMMON_SYMPTOMS_MAP.get(predicted_disease, [])
     precautions = PRECAUTION_MAP.get(predicted_disease, [])
 
     # Triệu chứng tiếng Việt

@@ -303,6 +303,7 @@
     "đàm"
   ],
   "throat_irritation": [
+    "đau họng",
     "rát họng",
     "ngứa họng",
     "kích ứng họng",
@@ -673,10 +674,11 @@
     "phình bụng"
   ],
   "history_of_alcohol_consumption": [
+    "tiền sử uống rượu",
     "uống nhiều rượu bia",
     "nghiện rượu",
-    "hay nhậu nhẹt",
-    "tiền sử dùng cồn"
+    "hay nhậu nhẹt"
+    
   ],
   "fluid_overload.1": [
     "quá tải dịch",
