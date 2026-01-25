@@ -48,10 +48,6 @@ def load_vn_lexicon(path: str = "data/vn_lexicon.json") -> dict:
 
 
 def load_symptom_list(data_dir: str = "data") -> list:
-    """
-    Cứng theo dataset: đọc header Training.csv, lấy tất cả cột trừ 'prognosis'.
-    Trả về tên cột đúng y như file (chỉ strip khoảng trắng).
-    """
     train_path = os.path.join(data_dir, "Training.csv")
     if not os.path.exists(train_path):
         return []
@@ -68,10 +64,6 @@ def load_symptom_list(data_dir: str = "data") -> list:
 
 
 def extract_symptoms(message: str, symptom_list: list, vn_lexicon: dict = None) -> list:
-    """
-    Trả về list triệu chứng (canonical) không trùng.
-    Ưu tiên: match từ điển đồng nghĩa -> match trực tiếp symptom_list.
-    """
     if not message:
         return []
 

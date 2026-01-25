@@ -14,8 +14,6 @@ META_PATH = "artifacts/meta.json"
 app = Flask(__name__)
 app.secret_key = "your_secret_key"
 
-MAX_HISTORY = 30
-
 # ===== Load resources =====
 SYMPTOM_LIST = []
 VN_LEXICON = load_vn_lexicon("data/vn_lexicon.json")
@@ -104,9 +102,6 @@ if META.get("symptom_cols"):
 else:
     SYMPTOM_LIST = load_symptom_list("data")
 
-def _trim_history(history):
-    return history[-MAX_HISTORY:] if len(history) > MAX_HISTORY else history
-
 @app.route("/", methods=["GET", "POST"])
 def index():
     # Model chưa sẵn sàng
@@ -153,7 +148,7 @@ def index():
             "text": "Xin lỗi, tôi không nhận ra triệu chứng nào từ mô tả của bạn.",
             "error": True
         })
-        session["history"] = _trim_history(chat_history)
+        session["history"] = chat_history
         return redirect(url_for("index"))
 
     # Vector đặc trưng
@@ -205,7 +200,7 @@ def index():
         "precautions": precautions
     })
 
-    session["history"] = _trim_history(chat_history)
+    session["history"] = chat_history
     return redirect(url_for("index"))
 
 @app.route("/reset")
